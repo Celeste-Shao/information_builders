@@ -3,3 +3,6 @@ Information Builder, one of the top Big Data Integration Platforms in the indust
 # Architecture
 ## 1. Data Pipeline for Inventory & Third-Party Data
 ![image](image/Pipeline1.png)
+Three of them are built using AWS Glue, which is a serverless and fully managed ETL tool. 
+One was extracting data from AWS RDS MySQL database using Glue crawler and run Glue job written in PySpark, which is triggered by a Lambda function. I generally did some transformation like changing the schema in Glue’s Schema Editor (to remove or add columns, change column names or data types), deleting null (df.na.drop(["ColumnMustNotNull"])) and duplicated values (df.dropDuplicate).  The processed table will be sent to Redshift data warehouse so that the data can be used in supply chain optimization models to better manage and organize the company’s inventory level. 
+Another two pipelines are for processing third-party data from IRI and Numerator who provided for example retail market data, point-of-sale (POS) data and ecommerce data, we analyzed those data for better understanding the market demand, the market competition and overall economic situation. The pipelines are pretty similar to previous one, but the data is from S3 bucket instead of RDS and of course, data transformation I did were also different.
