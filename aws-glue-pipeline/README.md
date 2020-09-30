@@ -53,8 +53,3 @@
  
    AWS Lake Formation applies its own permission model when you access data in Amazon S3 and metadata in AWS Glue Data Catalog through use of Amazon EMR, Amazon Athena and so on. 
    If you currently use Lake Formation and instead would like to use only IAM Access controls, this tool enables you to achieve it.
-
-
-## License Summary
-
-This sample code is made available under the MIT-0 license. See the LICENSE file.
