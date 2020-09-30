@@ -1,12 +1,5 @@
 # AWS Glue ETL Code
 
-### Content
-
- - [FAQ and How-to](FAQ_and_How_to.md)
-
-   Helps you get started using the many ETL capabilities of AWS Glue, and
-   answers some of the more common questions people have.
-
 ### Examples
  - [Join and Relationalize Data in S3](examples/join_and_relationalize.md)
 
