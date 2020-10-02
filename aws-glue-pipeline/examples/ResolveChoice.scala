@@ -1,7 +1,3 @@
-/*
- * Copyright 2016-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- * SPDX-License-Identifier: MIT-0
- */
 
 import com.amazonaws.services.glue.util.JsonOptions
 import com.amazonaws.services.glue.{DynamicFrame, GlueContext}
