@@ -1,5 +1,4 @@
-# Copyright 2016-2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: MIT-0
+
 
 from awsglue.dynamicframe import DynamicFrame
 from pyspark.sql.functions import col, lit, explode, collect_list, struct
