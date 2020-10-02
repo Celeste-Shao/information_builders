@@ -1,7 +1,4 @@
-/*
- * Copyright 2016-2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
- * SPDX-License-Identifier: MIT-0
- */
+
 
 import com.amazonaws.services.glue.types.StringNode
 import com.amazonaws.services.glue.util.JsonOptions
