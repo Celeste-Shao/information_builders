@@ -6,18 +6,6 @@ This sample makes it easy to setup a pipeline that uses [Sqoop](http://sqoop.apa
 
 The project provides scripts for setting up the resources for the pipeline, installing the [data set](http://aws.amazon.com/datasets/6468931156960467), and destroying the resources. The project also provides the [pipeline definition file](http://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-writing-pipeline-definition.html) which is used to create the pipeline and the AWS CLI commands for creating and executing the pipeline. See the instructions below to get started.
 
-*Note: Normal AWS charges apply for the resources created by the script. Make sure to run the teardown script as soon as you are done with the sample.*
-
-## Prerequisites
-
-You must have the AWS CLI and default IAM roles setup in order to run the sample. Please see the [readme](https://github.com/awslabs/data-pipeline-samples) for the base repository for instructions how to do this.
-
-You must also provide the S3Path of a S3 bucket with write permissions. See [here](http://docs.aws.amazon.com/AmazonS3/latest/UG/CreatingaBucket.html) for instructions on how to create an S3 bucket.
-
-Finally, you must install the [Python SDK for AWS](http://boto3.readthedocs.org/en/latest/guide/quickstart.html).
-```
-$> pip install boto3
-```
 
 ## Step 1: Priming this sample
 
@@ -108,10 +96,3 @@ Let the pipeline complete, then [connect to the Redshift cluster](http://docs.aw
 $> python setup/Teardown.py --rds-instance-id <rds_instance_id> --redshift-cluster-id <redshift_cluster_id> --s3-path [s3://optional/path/to/s3/bucket/created/by/setup]
 ```
 
-## Disclaimer
-
-The samples in this repository are meant to help users get started with Data Pipeline. They may not be sufficient for production environments. Users should carefully inspect code samples before running them.
-
-Use at your own risk.
-
-Licensed under the MIT-0 License.
