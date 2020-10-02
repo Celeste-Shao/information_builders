@@ -1,20 +1,12 @@
-#Data Pipeline  Load Tab Separated Files in S3 to Redshift 
+# Data Pipeline  Load Tab Separated Files in S3 to Redshift 
 
-##About the sample
-This pipeline definition when imported would instruct Redshift to load TSV files under the specified S3 Path into a specified Redshift Table. Table insert mode is OVERWRITE_EXISTING.
 
-##Running this sample
+## Running this sample
 The pipeline requires the following user input point:
 
 1. The S3 folder where the input TSV files are located. 
 2. Redshift connection info along with the target table name.
 3. Redshift Cluster security group id(s).
-
-
-## Prerequisites
-
-You must have the AWS CLI and default IAM roles setup in order to run the sample. Please see the [readme](https://github.com/awslabs/data-pipeline-samples) for the base repository for instructions how to do this.
-TSV files under a S3 folder path is the input for this pipeline. Redshift Cluster and Table must already exist.
 
 
 
@@ -61,10 +53,3 @@ Check the status of your pipeline
 You will receive status information on the pipeline. 
 
 
-## Disclaimer
-
-The samples in this repository are meant to help users get started with Data Pipeline. They may not be sufficient for production environments. Users should carefully inspect code samples before running them.
-
-Use at your own risk.
-
-Licensed under the MIT-0 License.
